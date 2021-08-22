@@ -1,0 +1,19 @@
+@use 'sass:map';
+
+$theme-colors: (
+  'success': #28a745,
+  'info': #17a2b8,
+  'warning': #ffc107,
+);
+
+// Usage example
+
+.alert {
+  // Instead of $theme-color-#{warning}
+  background-color: map.get($theme-colors, 'warning');
+  color: blue;
+  font-size: 2rem;
+}
+body {
+  background: blue;
+}
