@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Card from './Card'
+import Card from '../components/Card'
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft'
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight'
 
