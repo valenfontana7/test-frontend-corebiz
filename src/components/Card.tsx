@@ -33,19 +33,9 @@ function Card({ item }: CardProps) {
           readOnly
         />
         <p className="Card__listPrice">
-          {item.listPrice &&
-            `de ${new Intl.NumberFormat('es-AR', {
-              style: 'currency',
-              currency: 'ARS',
-            }).format(item.listPrice)}`}
+          {item.listPrice ? `de $ ${item.listPrice}` : ''}
         </p>
-        <p className="Card__price">
-          {item.price &&
-            `por ${new Intl.NumberFormat('es-AR', {
-              style: 'currency',
-              currency: 'ARS',
-            }).format(item.price)}`}
-        </p>
+        <p className="Card__price">{item.price ? `por $ ${item.price}` : ''}</p>
       </div>
       <button
         onClick={() => {

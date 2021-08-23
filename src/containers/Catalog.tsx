@@ -1,4 +1,4 @@
-import CardCarousel from '../components/CardCarousel'
+import CardCarousel from '../utils/CardCarousel'
 import { useEffect, useState } from 'react'
 
 function Catalog() {
