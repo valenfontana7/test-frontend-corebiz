@@ -26,7 +26,9 @@ function Header() {
             </li>
             <li className="Header__navigationItem">
               <img src="../assets/shopping-cart.svg" alt="cart" />
-              <Badge />
+              {localStorage.getItem('cartQty') && (
+                <Badge qty={Number(localStorage.getItem('cartQty'))} />
+              )}
             </li>
           </ul>
         </nav>

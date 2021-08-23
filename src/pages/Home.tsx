@@ -1,7 +1,8 @@
 import Header from '../utils/Header'
 import Carousel from '../utils/Carousel'
-import CardCarousel from '../utils/CardCarousel'
+import Catalog from '../containers/Catalog'
 import Footer from '../utils/Footer'
+
 function Home() {
   return (
     <>
@@ -14,7 +15,7 @@ function Home() {
           Más vendidos
           <span className="Home__titleUnderline"></span>
         </span>
-        <CardCarousel />
+        <Catalog />
       </main>
       <aside className="Newsletter"></aside>
       <Footer />

@@ -1,0 +1,16 @@
+@use '../abstracts' as *
+.CardCarousel
+  width: 100%
+  display: flex
+  &__backButton
+    @include control-button
+    width: 4%
+  &__nextButton
+    @include control-button
+    width: 4%
+  &__list
+    width: 92%
+    list-style: none
+    display: flex
+    justify-content: space-between
+    padding-left: 0
