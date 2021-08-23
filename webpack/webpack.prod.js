@@ -6,8 +6,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(css)$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        test: /\.(sass|less|css)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
